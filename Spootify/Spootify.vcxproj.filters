@@ -18,5 +18,13 @@
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="cPerson.h">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="dist.female.first.txt" />
+    <Text Include="dist.male.first.txt" />
+    <Text Include="US_LastNames.txt" />
   </ItemGroup>
 </Project>
