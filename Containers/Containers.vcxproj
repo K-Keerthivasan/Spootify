@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6c987a43-2bec-49ee-ad6a-2b32f08ab596}</ProjectGuid>
-    <RootNamespace>Spootify</RootNamespace>
+    <ProjectGuid>{a3c9ebc0-e5d7-4786-9366-ec5e5853edcc}</ProjectGuid>
+    <RootNamespace>Containers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,22 +128,28 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="cLinkedList.cpp" />
-    <ClCompile Include="cPerson.h" />
     <ClCompile Include="cPersonMaker.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="SortOfSmartArrays.cpp" />
-    <ClCompile Include="STL_Main.cpp" />
-    <ClCompile Include="tSortOfSmartArray.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <Text Include="dist.female.first.txt" />
-    <Text Include="dist.male.first.txt" />
-    <Text Include="US_LastNames.txt" />
+    <ClCompile Include="cSmartArray.cpp" />
+    <ClCompile Include="theMain_Linked_List.cpp" />
+    <ClCompile Include="theMain_Smart_Array.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="theMain_STL_list.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="theMain_STL_vector.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="cLinkedList.h" />
+    <ClInclude Include="cPerson.h" />
     <ClInclude Include="cPersonMaker.h" />
-    <ClInclude Include="SortOfSmartArrays.h" />
+    <ClInclude Include="cSmartArray.h" />
+    <ClInclude Include="tSmartArray.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
